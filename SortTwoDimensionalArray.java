@@ -1,5 +1,14 @@
 public class SortTwoDimensionalArray {
 	
+	//Main method
+	public static void main(String args[]) {
+		
+		int m [][] = { {4,2}, {1,7}, {4,5}, {1,2}, {1,1}, {4,1} };
+		
+		sort(m);
+		displayArray(m);
+	}
+	
 	//A method that sort the two-dimensional array
 	public static void sort(int m[][]) {
 		
