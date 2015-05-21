@@ -1,7 +1,7 @@
 public class SortTwoDimensionalArray {
 	
 	//Main method
-	public static void main(String args[]) {
+	public static void main(String[] args) {
 		
 		int m [][] = { {4,2}, {1,7}, {4,5}, {1,2}, {1,1}, {4,1} };
 		
@@ -20,7 +20,7 @@ public class SortTwoDimensionalArray {
 				
 				//Change the minimum and index if the ahead number small than minimum
 				//or the ahead number is the same but the hinder number is smaller
-				if(minimum > m[j][0] || minimum == m[j][0] && m[index][1] > m[j][1]) {
+				if(minimum > m[j][0] || (minimum == m[j][0] && m[index][1] > m[j][1])) {
 					
 					minimum = m[j][0];
 					index = j;
@@ -38,7 +38,7 @@ public class SortTwoDimensionalArray {
 				//exchange the hinder number
 				int temp1 = m[index][1];
 				m[index][1] = m[i][1];
-				m[i][1] = temp0;
+				m[i][1] = temp1;
 			}
 		}
 	}
@@ -46,11 +46,11 @@ public class SortTwoDimensionalArray {
 	//A method that print the array
 	public static void displayArray(int m[][]) {
 		
-		System.out.print("{");
+		System.out.print("{ ");
 		
 		for(int i = 0; i < m.length; i++) {
 			
-			System.out.print("{" + m[i][0] + "," + m[i][1] + "}");
+			System.out.print("{" + m[i][0] + "," + m[i][1] + "} ");
 		}
 		
 		System.out.print("}");
