@@ -17,6 +17,20 @@ public class SortTwoDimensionalArray {
 					index = j;
 				}
 			}
+			
+			//Switch the m[i] and m[index]
+			if(index != i) {
+				
+				//exchange the ahead number
+				int temp0 = m[index][0];
+				m[index][0] = m[i][0];
+				m[i][0] = temp0;
+				
+				//exchange the hinder number
+				int temp1 = m[index][1];
+				m[index][1] = m[i][1];
+				m[i][1] = temp0;
+			}
 		}
 	}
 }
