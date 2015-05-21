@@ -33,4 +33,17 @@ public class SortTwoDimensionalArray {
 			}
 		}
 	}
+	
+	//A method that print the array
+	public static void displayArray(int m[][]) {
+		
+		System.out.print("{");
+		
+		for(int i = 0; i < m.length; i++) {
+			
+			System.out.print("{" + m[i][0] + "," + m[i][1] + "}");
+		}
+		
+		System.out.print("}");
+	}
 }
